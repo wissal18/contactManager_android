@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Inscription">
+
+    <TextView
+        android:id="@+id/id_title_auth"
+        style="@style/st_titleNew"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="100dp"
+        android:text="Authentification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_email_inscription"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:ems="10"
+        android:hint="Adresse e-mail"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColorHint="#E3DDDD"
+        app:layout_constraintTop_toBottomOf="@+id/id_title_auth"
+        tools:layout_editor_absoluteX="37dp" />
+
+    <EditText
+        android:id="@+id/id_mdp_inscription"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:ems="10"
+        android:hint="mot de passe"
+        android:inputType="textPassword"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColorHint="#E3DDDD"
+        app:layout_constraintEnd_toEndOf="@+id/id_email_inscription"
+        app:layout_constraintStart_toStartOf="@+id/id_email_inscription"
+        app:layout_constraintTop_toBottomOf="@+id/id_email_inscription" />
+
+    <Button
+        android:id="@+id/id_btn_inscr"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="#FBF8F8"
+        android:text="Continuer"
+        app:layout_constraintEnd_toEndOf="@+id/id_mdp_inscription"
+        app:layout_constraintStart_toStartOf="@+id/id_mdp_inscription"
+        app:layout_constraintTop_toBottomOf="@+id/id_mdp_inscription" />
+
+    <TextView
+        android:id="@+id/id_tv_log_ins"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Je n'ai pas un compte"
+        app:layout_constraintEnd_toEndOf="@+id/id_btn_inscr"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/id_btn_inscr"
+        app:layout_constraintTop_toBottomOf="@+id/id_btn_inscr" />
+</androidx.constraintlayout.widget.ConstraintLayout>

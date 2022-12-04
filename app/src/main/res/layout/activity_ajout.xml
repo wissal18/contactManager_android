@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Ajout">
+
+    <TextView
+        android:id="@+id/title_ajout"
+        style="@style/st_titleNew"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:gravity="center|center_horizontal"
+        android:text="Ajouter nouveau contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <EditText
+        android:id="@+id/id_nom"
+        style="@style/st_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:hint="nom"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/title_ajout"
+        app:layout_constraintStart_toStartOf="@+id/title_ajout"
+        app:layout_constraintTop_toBottomOf="@+id/title_ajout" />
+
+    <EditText
+        android:id="@+id/id_prenom"
+        style="@style/st_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="prenom"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/id_num"
+        app:layout_constraintEnd_toEndOf="@+id/id_nom"
+        app:layout_constraintStart_toStartOf="@+id/id_nom"
+        app:layout_constraintTop_toBottomOf="@+id/id_nom"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <EditText
+        android:id="@+id/id_num"
+        style="@style/st_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="numero"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/id_prenom"
+        app:layout_constraintStart_toStartOf="@+id/id_prenom"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <LinearLayout
+        android:layout_width="398dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/id_num"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="@+id/id_num"
+        app:layout_constraintTop_toBottomOf="@+id/id_num">
+
+        <Button
+            android:id="@+id/btn_ajout2"
+            style="@style/st_rouded_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:text="Ajout" />
+
+        <Button
+            android:id="@+id/id_aff2"
+            style="@style/st_rouded_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="afficher" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
